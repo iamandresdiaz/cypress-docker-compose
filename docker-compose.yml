@@ -1,0 +1,11 @@
+version: '3'
+services:
+  cypress:
+    build:
+      dockerfile: ./resources/docker/local/cypress/Dockerfile
+      context: .
+    container_name: cypress
+    command: npx cypress run
+    volumes:
+      - ./cypress:/app/cypress
+      - ./cypress.json:/app/cypress.json

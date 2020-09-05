@@ -1,0 +1,7 @@
+{
+    "baseUrl": "http://host.docker.internal:8080",
+    "reporter": "junit",
+    "reporterOptions": {
+        "mochaFile": "results/TEST-[hash].xml"
+    }
+}
